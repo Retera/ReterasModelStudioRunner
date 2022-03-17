@@ -36,7 +36,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\Downloads\ReterasModelStudioV0.04.2020.03.03\ImageBin\retera.ico">
+    <Image Include="BTNFlyingSheep.ico">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

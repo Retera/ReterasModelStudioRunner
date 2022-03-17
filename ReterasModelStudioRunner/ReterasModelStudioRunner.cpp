@@ -42,10 +42,10 @@ int WINAPI WinMain(
 	if (lpCmdLine != NULL) {
 		WCHAR lpwCmdLine[MAX_PATH];
 		MultiByteToWideChar(CP_ACP, 0, lpCmdLine, -1, lpwCmdLine, MAX_PATH);
-		wsprintf(cmdArgs, L"jre\\bin\\java.exe -jar ReterasModelStudio.jar %s", lpwCmdLine);
+		wsprintf(cmdArgs, L"bin\\drms.bat %s", lpwCmdLine);
 	}
 	else {
-		wchar_t cmdArgsBase[] = L"jre\\bin\\java.exe -jar ReterasModelStudio.jar";
+		wchar_t cmdArgsBase[] = L"bin\\drms.bat";
 		if (wcsncpy_s(cmdArgs, MAX_PATH, cmdArgsBase, MAX_PATH)) {
 			std::cout << "Unable to generate fowarded argument list.\n";
 			return FALSE;
