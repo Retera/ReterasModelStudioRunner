@@ -54,7 +54,7 @@ int WINAPI WinMain(
 
 
 	// Start the child process. 
-	BOOL result = CreateProcess(TEXT("jre\\bin\\java.exe"),   // No module name (use command line)
+	BOOL result = CreateProcess(TEXT("bin\\drms.bat"),   // No module name (use command line)
 		cmdArgs,        // Command line
 		NULL,           // Process handle not inheritable
 		NULL,           // Thread handle not inheritable
